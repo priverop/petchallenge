@@ -1,8 +1,10 @@
 # Pet Challenge
 
-The goal of this project is to develop a web app to find your perfect pet.\
+The goal of this project is to develop a web app to find your perfect pet.
 
 This project is being managed [here](https://trello.com/b/mT7EpOG9/pet-challenge).
+
+**Note to myself! Use [this](https://github.com/react-boilerplate/react-boilerplate-cra-template) for the next project.**
 
 ## Features
 
@@ -54,3 +56,4 @@ Builds the app for production to the `build` folder.\
 ## Credits
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Prettier & ESLint config from [CRA+React Boilerplate](https://github.com/react-boilerplate/react-boilerplate-cra-template).

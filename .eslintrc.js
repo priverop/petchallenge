@@ -1,3 +1,10 @@
+const fs = require('fs');
+const path = require('path');
+
+const prettierOptions = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, '.prettierrc.json'), 'utf8'),
+);
+
 module.exports = {
   env: {
     browser: true,
@@ -7,6 +14,8 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'prettier',
+    'prettier/react',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -18,9 +27,11 @@ module.exports = {
   plugins: [
     'react',
     'jest',
+    'prettier',
   ],
   rules: {
     'react/react-in-jsx-scope': 0,
     'react/jsx-filename-extension': 0,
-  },
+    'prettier/prettier': ['error', prettierOptions],
+  }
 };
