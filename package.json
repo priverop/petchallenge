@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "CI=true react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .jsx,.js src && stylelint src/**/*.css"
   },
@@ -36,11 +36,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo fail && exit 1"
-    }
   },
   "devDependencies": {
     "eslint": "^7.17.0",
