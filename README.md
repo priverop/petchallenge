@@ -18,6 +18,19 @@ This project is being managed [here](https://trello.com/b/mT7EpOG9/pet-challenge
 - Firebase Realtime Database
 - Firebase functions using NodeJS
 
+### Extra Libraries
+- ESLint with Aribnb ruleset.
+- Prettier.
+- StyleLint.
+
+* I won't install EditorConfig because I'm the only contributor.
+
+#### Configuration
+
+- ESLint disabled ['react/react-in-jsx-scope'](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) as we define global React var in `index.jsx` and ['jsx-filename-extension'](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md).
+- [Why I am using `.js` instead of `.jsx`](https://github.com/facebook/create-react-app/issues/87#issuecomment-234627904). [More discussion](https://github.com/airbnb/javascript/pull/985#issuecomment-239145468).
+
+
 ## Available Scripts
 
 In the project directory, you can run:
