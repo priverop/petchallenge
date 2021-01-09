@@ -17,7 +17,7 @@ const Pet = props => (
         top
         width="100%"
         src="https://loremflickr.com/320/240/dog"
-        alt="Card image cap"
+        alt="Your pet!"
       />
       <CardBody>
         <CardTitle tag="h5">{props.pet.name}</CardTitle>

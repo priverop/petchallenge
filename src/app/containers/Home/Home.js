@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container } from 'reactstrap';
 import './Home.css';
 
-import database from '../../../services/database';
+import * as petService from '../../../services/pet.service';
 import Pets from '../../components/Pets';
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    database.ref('pets').on('value', snapshot => {
+    petService.getAll().on('value', snapshot => {
       const pets = [];
       snapshot.forEach(snap => {
         pets.push(snap.val());

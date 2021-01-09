@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Container } from 'reactstrap';
+import { Container, Row } from 'reactstrap';
 import './PetPage.css';
 import CompletePet from '../../components/CompletePet';
 
-import database from '../../../services/database';
+import * as petService from '../../../services/pet.service';
 
 class PetPage extends Component {
   constructor(props) {
@@ -11,25 +11,40 @@ class PetPage extends Component {
     this.state = {
       pet: {},
       petId: 0,
+      likes: 0,
     };
     if (props.match) {
       this.setState({ petId: props.match.params.id });
     }
+    this.handleLike = this.handleLike.bind(this);
   }
 
   componentDidMount() {
-    database.ref(`pets/${this.state.petId}`).on('value', snapshot => {
-      this.setState({ pet: snapshot.val() });
+    petService.get(this.state.petId).on('value', snapshot => {
+      const likes = Object.keys(snapshot.val().likes).length;
+      console.log(likes);
+      this.setState({ pet: snapshot.val(), likes });
     });
+  }
+
+  handleLike() {
+    petService.addLike(this.state.petId);
   }
 
   render() {
     const pet = this.state ? this.state.pet : 'No pet found';
+    const likes = this.state ? this.state.likes : 0;
     return (
       <>
-        <div data-testid="pet-page">
+        <div id="PetPage" data-testid="pet-page">
           <Container>
-            <CompletePet pet={pet} />
+            <Row>
+              <CompletePet
+                pet={pet}
+                likes={likes}
+                handleLike={this.handleLike}
+              />
+            </Row>
           </Container>
         </div>
       </>

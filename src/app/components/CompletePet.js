@@ -14,15 +14,21 @@ const CompletePet = props => (
     <Card>
       <CardImg
         top
-        width="100%"
+        className="img-fluid"
         src="https://loremflickr.com/320/240/dog"
-        alt="Card image cap"
+        alt="Dog!"
       />
       <CardBody>
         <CardTitle tag="h5">{props.pet.name}</CardTitle>
         <CardSubtitle tag="h6">{props.pet.date}</CardSubtitle>
         <CardText>Hey! This is a dog!</CardText>
-        <Button>Take a look!</Button>
+        <Button
+          onClick={() => {
+            props.handleLike();
+          }}
+        >
+          Like! ({props.likes})
+        </Button>
       </CardBody>
     </Card>
   </Col>
