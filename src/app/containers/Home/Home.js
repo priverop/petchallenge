@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import { Container } from 'reactstrap';
+import './Home.css';
 
-import './App.css';
-
-import database from '../../services/database';
-import Pets from '../components/Pets';
+import database from '../../../services/database';
+import Pets from '../../components/Pets';
 
 class App extends Component {
   constructor(props) {
@@ -27,8 +27,10 @@ class App extends Component {
     const pets = this.state ? this.state.pets : 'No pets found';
     return (
       <>
-        <div className="App" data-testid="main-app">
-          <Pets pets={pets} />
+        <div data-testid="home-page">
+          <Container>
+            <Pets pets={pets} />
+          </Container>
         </div>
       </>
     );

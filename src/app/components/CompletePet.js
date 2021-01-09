@@ -8,9 +8,8 @@ import {
   Button,
   Col,
 } from 'reactstrap';
-import { Link } from 'react-router-dom';
 
-const Pet = props => (
+const CompletePet = props => (
   <Col>
     <Card>
       <CardImg
@@ -23,15 +22,9 @@ const Pet = props => (
         <CardTitle tag="h5">{props.pet.name}</CardTitle>
         <CardSubtitle tag="h6">{props.pet.date}</CardSubtitle>
         <CardText>Hey! This is a dog!</CardText>
-        <Link
-          to={{
-            pathname: `/pet/${props.pet.index}`,
-          }}
-        >
-          <Button>Take a look!</Button>
-        </Link>
+        <Button>Take a look!</Button>
       </CardBody>
     </Card>
   </Col>
 );
-export default Pet;
+export default CompletePet;
