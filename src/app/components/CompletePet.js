@@ -8,30 +8,29 @@ import {
   Button,
   Col,
 } from 'reactstrap';
-import { Link } from 'react-router-dom';
 
-const Pet = props => (
+const CompletePet = props => (
   <Col>
     <Card>
       <CardImg
         top
-        width="100%"
+        className="img-fluid"
         src="https://loremflickr.com/320/240/dog"
-        alt="Your pet!"
+        alt="Dog!"
       />
       <CardBody>
         <CardTitle tag="h5">{props.pet.name}</CardTitle>
         <CardSubtitle tag="h6">{props.pet.date}</CardSubtitle>
         <CardText>Hey! This is a dog!</CardText>
-        <Link
-          to={{
-            pathname: `/pet/${props.pet.index}`,
+        <Button
+          onClick={() => {
+            props.handleLike();
           }}
         >
-          <Button>Take a look!</Button>
-        </Link>
+          Like! ({props.likes})
+        </Button>
       </CardBody>
     </Card>
   </Col>
 );
-export default Pet;
+export default CompletePet;

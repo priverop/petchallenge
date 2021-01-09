@@ -26,5 +26,6 @@ module.exports = {
     'prettier/prettier': ['error', prettierOptions],
     'react/destructuring-assignment': 0,
     'react/prop-types': 0,
+    'no-console': 0,
   },
 };
