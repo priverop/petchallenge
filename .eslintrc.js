@@ -11,12 +11,7 @@ module.exports = {
     es2021: true,
     'jest/globals': true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-    'prettier',
-    'prettier/react',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb', 'prettier', 'prettier/react'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -24,14 +19,13 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    'jest',
-    'prettier',
-  ],
+  plugins: ['react', 'jest', 'prettier'],
   rules: {
     'react/react-in-jsx-scope': 0,
     'react/jsx-filename-extension': 0,
     'prettier/prettier': ['error', prettierOptions],
-  }
+    'react/destructuring-assignment': 0,
+    'react/prop-types': 0,
+    'no-console': 0,
+  },
 };
