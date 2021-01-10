@@ -1,5 +1,13 @@
 @import './vars.scss';
 
+h1, h2 {
+  font-weight: bold;
+}
+
+.main-color {
+  color: $mainColor;
+}
+
 .btn-secondary {
   background: linear-gradient(40deg, $mainColor, $mainColorLight);
   border-radius: 25px !important;

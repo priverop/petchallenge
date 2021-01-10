@@ -6,7 +6,9 @@ const Cover = () => (
     <Container>
       <Row>
         <Col>
-          <h1>Find your perfect partner today</h1>
+          <h1 className="mb-3">
+            Find your <span className="main-color">perfect</span> partner today
+          </h1>
           <Button className="colorful-button" size="lg">
             Let&apos;s go!
           </Button>
