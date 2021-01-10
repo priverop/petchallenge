@@ -61,6 +61,7 @@ Builds the app for production to the `build` folder.\
 
 ## Credits
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Prettier & ESLint config from [CRA+React Boilerplate](https://github.com/react-boilerplate/react-boilerplate-cra-template).
-Images obtained from [Unsplash](https://unsplash.com): [Alvan Nee](https://unsplash.com/@alvannee?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText), [Erda Estremera](https://unsplash.com/@erdaest?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Prettier & ESLint config from [CRA+React Boilerplate](https://github.com/react-boilerplate/react-boilerplate-cra-template).
+- Images obtained from [Unsplash](https://unsplash.com): [Alvan Nee](https://unsplash.com/@alvannee?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText), [Erda Estremera](https://unsplash.com/@erdaest?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText).
+- Vectors from [FreeVector](https://freevector.com).
