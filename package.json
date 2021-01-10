@@ -10,6 +10,7 @@
     "bootstrap": "^4.5.3",
     "eslint-plugin-jest": "^24.1.3",
     "firebase": "^8.2.2",
+    "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -22,7 +23,7 @@
     "build": "react-scripts build",
     "test": "CI=true react-scripts test",
     "coverage": "npm test -- --coverage",
-    "lint": "eslint --ext .jsx,.js src && stylelint src/**/*.css"
+    "lint": "eslint --ext .jsx,.js src && stylelint src/**/*.scss"
   },
   "eslintConfig": {
     "extends": [

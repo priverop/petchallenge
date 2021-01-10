@@ -1,0 +1,28 @@
+@import './vars.scss';
+
+.btn-secondary {
+  background: linear-gradient(40deg, $mainColor, $mainColorLight);
+  border-radius: 25px !important;
+  border: 0 !important;
+  padding: 10px 40px !important;
+  color: $white;
+  &:hover {
+    background-color: $mainColorLight !important;
+    color: black !important;
+    transition: all 300ms ease 0ms;
+    &:after {
+      line-height: 1em;
+      opacity: 1;
+      text-shadow: none;
+    }
+  }
+}
+
+.colorful-button {
+  width: 250px;
+  margin-left: 125px;
+  font-size: 20px !important;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: medium;
+}
