@@ -14,6 +14,12 @@ This project is being managed [here](https://trello.com/b/mT7EpOG9/pet-challenge
 - 2 screens, minimum 3 profiles with: photo, name, description.
 - Cool transitions! Fade in on load, carousels, etc.
 
+### Scaling the app
+
+- Instaling SCSS + JS preprocessors.
+- Split vars.scss into multiples files (colors, images, etc).
+
+
 ## Stack
 
 - ReactJS
@@ -57,3 +63,4 @@ Builds the app for production to the `build` folder.\
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Prettier & ESLint config from [CRA+React Boilerplate](https://github.com/react-boilerplate/react-boilerplate-cra-template).
+Images obtained from [Unsplash](https://unsplash.com): [Alvan Nee](https://unsplash.com/@alvannee?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText), [Erda Estremera](https://unsplash.com/@erdaest?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)

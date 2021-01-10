@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row } from 'reactstrap';
-import './PetPage.css';
+import './PetPage.scss';
 import CompletePet from '../../components/CompletePet';
 
 import * as petService from '../../../services/pet.service';
