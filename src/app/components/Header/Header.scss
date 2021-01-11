@@ -4,4 +4,7 @@
   color: $mainColor;
   font-weight: bolder;
   font-size: 2rem !important;
+  @media (max-width: 767.98px) {
+    text-shadow: 1px 1px 1px $white;
+  }
 }

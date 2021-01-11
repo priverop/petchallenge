@@ -1,7 +1,7 @@
 @import '../../../styles/vars.scss';
 
 #Footer {
-  height: 35vh;
+  min-height: 35vh;
   background: $darkGrey;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,11 @@
     }
   }
   hr {
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  @media (max-width: 767.98px) {
+    h3 {
+      padding-top: 1rem !important;
+    }
   }
 }
