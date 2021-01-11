@@ -29,9 +29,6 @@ const Footer = () => (
                   <NavLink href="#">FAQ</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#">Jobs</NavLink>
-                </NavItem>
-                <NavItem>
                   <NavLink href="#">Contact</NavLink>
                 </NavItem>
               </Nav>

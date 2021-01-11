@@ -5,6 +5,7 @@ const PetData = props => (
     <Col>
       <div>
         <Button
+          id="likeButton"
           className="float-right"
           onClick={() => {
             props.handleLike();
