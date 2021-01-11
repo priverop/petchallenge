@@ -53,7 +53,7 @@ const PetAdopt = () => (
 );
 
 const CompletePet = props => (
-  <>
+  <Row id="CompletePet">
     <Col md="6">
       <PetImage name={props.pet.name} />
     </Col>
@@ -71,6 +71,6 @@ const CompletePet = props => (
         </Tada>
       </Zoom>
     </Col>
-  </>
+  </Row>
 );
 export default CompletePet;

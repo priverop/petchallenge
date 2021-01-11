@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row } from 'reactstrap';
+import { Container } from 'reactstrap';
 import './PetPage.scss';
 import CompletePet from '../../components/CompletePet/CompletePet';
 
@@ -38,13 +38,7 @@ class PetPage extends Component {
       <>
         <div id="PetPage" data-testid="pet-page">
           <Container>
-            <Row>
-              <CompletePet
-                pet={pet}
-                likes={likes}
-                handleLike={this.handleLike}
-              />
-            </Row>
+            <CompletePet pet={pet} likes={likes} handleLike={this.handleLike} />
           </Container>
         </div>
       </>
