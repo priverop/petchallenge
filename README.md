@@ -24,7 +24,6 @@ This project is being managed [here](https://trello.com/b/mT7EpOG9/pet-challenge
 
 - ReactJS
 - Firebase Realtime Database
-- Firebase functions using NodeJS
 
 ### Extra Libraries
 - ESLint with Aribnb ruleset.
@@ -63,6 +62,6 @@ Builds the app for production to the `build` folder.\
 
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 - Prettier & ESLint config from [CRA+React Boilerplate](https://github.com/react-boilerplate/react-boilerplate-cra-template).
-- Images obtained from [Unsplash](https://unsplash.com): [Alvan Nee](https://unsplash.com/@alvannee?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText), [Erda Estremera](https://unsplash.com/@erdaest?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText).
+- Images obtained from [Unsplash](https://unsplash.com): [Alvan Nee](https://unsplash.com/@alvannee?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText), [Erda Estremera](https://unsplash.com/@erdaest?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText), [Berkay Gumustekin](https://unsplash.com/@berkaygumustekin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText), [Alwyn Gulzar](https://unsplash.com/@gyron?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">), [John Price](https://unsplash.com/@johnprice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), [Jamie Street](https://unsplash.com/@jamie452?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), [Alexandra Iammerink](https://unsplash.com/@lexyism?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
 - Vectors from [FreeVector](https://freevector.com).
 - Background from [Tomislava Babić](https://behance.net/antitomi)

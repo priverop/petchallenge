@@ -43,8 +43,11 @@ const PetCarousel = props => {
           pathname: `/pet/${item.index}`,
         }}
       >
-        <img src="https://loremflickr.com/1024/320/dog" alt={item.name} />
-        <CarouselCaption captionText={item.name} captionHeader={item.name} />
+        <img src={`../img/pets/${item.img}`} height="320" alt={item.name} />
+        <CarouselCaption
+          captionText={item.description}
+          captionHeader={item.name}
+        />
       </Link>
     </CarouselItem>
   ));

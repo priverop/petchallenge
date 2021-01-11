@@ -9,7 +9,7 @@ const PetImage = props => (
   <Bounce delay={500}>
     <img
       className="full-pet-image img-fluid"
-      src="../img/pets/dog1.jpg"
+      src={`../img/pets/${props.img}`}
       alt={props.name}
     />
   </Bounce>
@@ -29,7 +29,7 @@ const PetData = props => (
         </Button>
         <h1 className="main-color">{props.pet.name}</h1>
       </div>
-      <h3>Hey! This is a dog!</h3>
+      <h3>{props.pet.description}</h3>
       <div>
         <small>
           Added: {new Date(props.pet.created_at).toLocaleDateString('en-gb')}
@@ -55,7 +55,7 @@ const PetAdopt = () => (
 const CompletePet = props => (
   <Row id="CompletePet">
     <Col md="6">
-      <PetImage name={props.pet.name} />
+      <PetImage name={props.pet.name} img={props.pet.img} />
     </Col>
     <Col md="6">
       <Fade left>

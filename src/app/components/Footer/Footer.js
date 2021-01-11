@@ -12,9 +12,10 @@ const Footer = () => (
               <h6> Find your perfect partner today</h6>
             </Col>
           </Row>
+          <hr />
           <Row>
             <Col>
-              <Nav className="justify-content-center mt-5">
+              <Nav className="justify-content-center">
                 <NavItem>
                   <NavLink href="#">Terms of Use</NavLink>
                 </NavItem>
