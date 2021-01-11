@@ -3,7 +3,7 @@ import { Container } from 'reactstrap';
 import './Home.scss';
 
 import * as petService from '../../../services/pet.service';
-import Pets from '../../components/Pets';
+import Pets from '../../components/Pets/Pets';
 import Cover from '../../components/Cover/Cover';
 
 class App extends Component {

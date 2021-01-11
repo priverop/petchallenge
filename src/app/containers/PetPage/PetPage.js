@@ -13,18 +13,22 @@ class PetPage extends Component {
       petId: 0,
       likes: 0,
     };
-    if (props.match) {
-      this.setState({ petId: props.match.params.id });
-    }
     this.handleLike = this.handleLike.bind(this);
   }
 
   componentDidMount() {
-    petService.get(this.state.petId).on('value', snapshot => {
-      const likes = Object.keys(snapshot.val().likes).length;
-      console.log(likes);
-      this.setState({ pet: snapshot.val(), likes });
-    });
+    if (this.props.match) {
+      const {
+        match: { params },
+      } = this.props;
+
+      this.setState({ petId: params.id });
+
+      petService.get(params.id).on('value', snapshot => {
+        const likes = Object.keys(snapshot.val().likes).length;
+        this.setState({ pet: snapshot.val(), likes });
+      });
+    }
   }
 
   handleLike() {

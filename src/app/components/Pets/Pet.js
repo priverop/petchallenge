@@ -20,7 +20,9 @@ const Pet = props => (
         alt="Your pet!"
       />
       <CardBody>
-        <CardTitle tag="h5">{props.pet.name}</CardTitle>
+        <CardTitle tag="h5" className="main-color">
+          {props.pet.name}
+        </CardTitle>
         <CardSubtitle tag="h6">{props.pet.date}</CardSubtitle>
         <CardText>Hey! This is a dog!</CardText>
         <Link
