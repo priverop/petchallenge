@@ -1,0 +1,29 @@
+@import '../../../styles/vars.scss';
+
+#PetGallery {
+  height: 100vh;
+}
+
+.carousel {
+  width: 100%;
+  img {
+    border-radius: 25px;
+  }
+  .carousel-caption {
+    text-shadow: 1px 1px black;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: none;
+    &:after {
+      font-size: 55px;
+      color: $mainColor;
+    }
+  }
+  .carousel-control-next-icon:after {
+    content: '>';
+  }
+  .carousel-control-prev-icon:after {
+    content: '<';
+  }
+}

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Container, Row } from 'reactstrap';
-import './PetPage.css';
-import CompletePet from '../../components/CompletePet';
+import { Container } from 'reactstrap';
+import { Helmet } from 'react-helmet';
+import './PetPage.scss';
+import CompletePet from '../../components/CompletePet/CompletePet';
 
 import * as petService from '../../../services/pet.service';
 
@@ -13,18 +14,22 @@ class PetPage extends Component {
       petId: 0,
       likes: 0,
     };
-    if (props.match) {
-      this.setState({ petId: props.match.params.id });
-    }
     this.handleLike = this.handleLike.bind(this);
   }
 
   componentDidMount() {
-    petService.get(this.state.petId).on('value', snapshot => {
-      const likes = Object.keys(snapshot.val().likes).length;
-      console.log(likes);
-      this.setState({ pet: snapshot.val(), likes });
-    });
+    if (this.props.match) {
+      const {
+        match: { params },
+      } = this.props;
+
+      this.setState({ petId: params.id });
+
+      petService.get(params.id).on('value', snapshot => {
+        const likes = Object.keys(snapshot.val().likes).length;
+        this.setState({ pet: snapshot.val(), likes });
+      });
+    }
   }
 
   handleLike() {
@@ -36,15 +41,12 @@ class PetPage extends Component {
     const likes = this.state ? this.state.likes : 0;
     return (
       <>
+        <Helmet>
+          <title>Pet Details</title>
+        </Helmet>
         <div id="PetPage" data-testid="pet-page">
           <Container>
-            <Row>
-              <CompletePet
-                pet={pet}
-                likes={likes}
-                handleLike={this.handleLike}
-              />
-            </Row>
+            <CompletePet pet={pet} likes={likes} handleLike={this.handleLike} />
           </Container>
         </div>
       </>
