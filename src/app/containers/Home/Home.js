@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
-import './Home.css';
+import './Home.scss';
 
 import * as petService from '../../../services/pet.service';
-import Pets from '../../components/Pets';
+import Pets from '../../components/Pets/Pets';
+import Cover from '../../components/Cover/Cover';
 
 class App extends Component {
   constructor(props) {
@@ -28,7 +29,8 @@ class App extends Component {
     return (
       <>
         <div data-testid="home-page">
-          <Container>
+          <Container fluid>
+            <Cover />
             <Pets pets={pets} />
           </Container>
         </div>

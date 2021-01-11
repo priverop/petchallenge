@@ -1,0 +1,10 @@
+@import '../../../styles/vars.scss';
+
+#Cover {
+  height: 100vh;
+  background-image: url($coverImage);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,15 @@
+@import '../../../styles/vars.scss';
+
+#Footer {
+  height: 35vh;
+  background: $darkGrey;
+  justify-content: center;
+  align-items: center;
+  color: $lightGrey;
+  a {
+    color: $lightGrey;
+    &:hover {
+      color: $mainColorLight;
+    }
+  }
+}
