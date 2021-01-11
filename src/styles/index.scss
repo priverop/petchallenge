@@ -12,6 +12,10 @@ h1, h2 {
   color: $mainColor;
 }
 
+.main-color-text {
+  color: $mainColorText;
+}
+
 .btn-secondary {
   background: linear-gradient(40deg, $mainColor, $mainColorLight);
   border-radius: 25px !important;
