@@ -19,7 +19,6 @@ This project is being managed [here](https://trello.com/b/mT7EpOG9/pet-challenge
 - Instaling SCSS + JS preprocessors.
 - Split vars.scss into multiples files (colors, images, etc).
 
-
 ## Stack
 
 - ReactJS
@@ -29,12 +28,20 @@ This project is being managed [here](https://trello.com/b/mT7EpOG9/pet-challenge
 - ESLint with Aribnb ruleset.
 - Prettier.
 - StyleLint.
+- Reactstrap.
+- React Router v4.
+- Firebase.
+- Sass.
+- Helmet.
+- Husky.
+- React-Reveal.
+- Jest.
+
 
 * I won't install EditorConfig because I'm the only contributor.
 
-#### Configuration
+#### Details
 
-- ESLint disabled ['react/react-in-jsx-scope'](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) as we define global React var in `index.jsx` and ['jsx-filename-extension'](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md).
 - [Why I am using `.js` instead of `.jsx`](https://github.com/facebook/create-react-app/issues/87#issuecomment-234627904). [More discussion](https://github.com/airbnb/javascript/pull/985#issuecomment-239145468).
 
 
