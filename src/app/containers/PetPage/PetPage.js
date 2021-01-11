@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
+import { Helmet } from 'react-helmet';
 import './PetPage.scss';
 import CompletePet from '../../components/CompletePet/CompletePet';
 
@@ -40,6 +41,9 @@ class PetPage extends Component {
     const likes = this.state ? this.state.likes : 0;
     return (
       <>
+        <Helmet>
+          <title>Pet Details</title>
+        </Helmet>
         <div id="PetPage" data-testid="pet-page">
           <Container>
             <CompletePet pet={pet} likes={likes} handleLike={this.handleLike} />

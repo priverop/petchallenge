@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { Container } from 'reactstrap';
 import './Home.scss';
 
@@ -28,6 +29,9 @@ class App extends Component {
     const pets = this.state ? this.state.pets : 'No pets found';
     return (
       <>
+        <Helmet>
+          <title>Home</title>
+        </Helmet>
         <div data-testid="home-page">
           <Container fluid>
             <Cover />

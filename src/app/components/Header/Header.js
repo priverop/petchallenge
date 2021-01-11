@@ -4,7 +4,7 @@ import { Navbar, NavbarBrand } from 'reactstrap';
 const Header = () => (
   <div>
     <Navbar fixed="top">
-      <NavbarBrand href="/">Wofder!</NavbarBrand>
+      <NavbarBrand href="/">Woofder!</NavbarBrand>
     </Navbar>
   </div>
 );
