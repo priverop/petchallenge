@@ -4,10 +4,9 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption,
 } from 'reactstrap';
 import './Pets.scss';
-import { Link } from 'react-router-dom';
+import PetCarouselItem from './PetCarouselItem';
 
 const PetCarousel = props => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -38,17 +37,12 @@ const PetCarousel = props => {
       onExited={() => setAnimating(false)}
       key={item.index}
     >
-      <Link
-        to={{
-          pathname: `/pet/${item.index}`,
-        }}
-      >
-        <img src={`../img/pets/${item.img}`} height="320" alt={item.name} />
-        <CarouselCaption
-          captionText={item.description}
-          captionHeader={item.name}
-        />
-      </Link>
+      <PetCarouselItem
+        index={item.index}
+        img={item.img}
+        name={item.name}
+        description={item.description}
+      />
     </CarouselItem>
   ));
 
