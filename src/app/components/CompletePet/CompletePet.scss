@@ -1,5 +1,19 @@
 @import '../../../styles/vars.scss';
 
-.full-pet-image {
-  border-radius: 50px;
+#CompletePet {
+  .full-pet-image {
+    border-radius: 50px;
+  }
+  @media (max-width: 767.98px) {
+    .col:last-child{
+      margin-top: 2rem;
+      #likeButton {
+        margin-top: 20px;
+        padding: 5px 20px !important;
+      }
+      #PetAdopt {
+        padding-top: 0 !important;
+      }
+    }
+  }
 }

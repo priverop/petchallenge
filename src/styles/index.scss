@@ -14,6 +14,10 @@ h1, h2 {
 
 .main-color-text {
   color: $mainColorText;
+  @media (max-width: 767.98px) {
+    color: $white;
+    text-shadow: 1px 1px 1px black;
+  }
 }
 
 .btn-secondary {
@@ -32,13 +36,4 @@ h1, h2 {
       text-shadow: none;
     }
   }
-}
-
-.colorful-button {
-  width: 250px;
-  margin-left: 125px;
-  font-size: 20px !important;
-  cursor: pointer;
-  letter-spacing: 1px;
-  font-family: medium;
 }

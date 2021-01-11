@@ -10,10 +10,10 @@ import PetData from './PetData';
 
 const CompletePet = props => (
   <Row id="CompletePet">
-    <Col md="6">
+    <Col md="6" xs="12">
       <PetImage name={props.pet.name} img={props.pet.img} />
     </Col>
-    <Col md="6">
+    <Col md="6" xs="12">
       <Fade left>
         <PetData
           likes={props.likes}

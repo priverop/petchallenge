@@ -8,7 +8,7 @@ const Pets = props => (
   <Row className="py-5 text-center" id="PetGallery">
     <Col>
       <div>
-        <h2 className="mb-5 main-color-text">
+        <h2 className="mb-5">
           Are you ready to meet your{' '}
           <span className="main-color">new best friend</span>?
         </h2>
